@@ -1,73 +1,142 @@
-# React + TypeScript + Vite
+# 🌙 Midnight_Snacks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page para **Midnight_Snacks**, un servicio de delivery enfocado en ofrecer una experiencia rápida, sencilla y confiable para sus clientes.
 
-Currently, two official plugins are available:
+El proyecto presenta los servicios de la empresa, zonas de cobertura, especialidades, testimonios y el proceso de funcionamiento del servicio, además de facilitar el contacto directo mediante WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+* **React** — Biblioteca para la construcción de interfaces.
+* **TypeScript** — Tipado estático para JavaScript.
+* **Vite** — Herramienta de desarrollo y compilación.
+* **CSS** — Estilos y diseño responsive.
+* **ESLint** — Análisis y calidad del código.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Estructura del proyecto
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+Midnight_Snacks/
+├── public/
+│   ├── cloud-moon-fill.svg
+│   └── preview.png
+│
+├── src/
+│   ├── assets/
+│   │   └── Imágenes del proyecto
+│   │
+│   ├── components/
+│   │   ├── CTASection.tsx
+│   │   ├── CoverageSection.tsx
+│   │   ├── FloatingWhatsApp.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── HowItWorksSection.tsx
+│   │   ├── LiveSection.tsx
+│   │   ├── NavBar.tsx
+│   │   ├── PrivacyPolicy.tsx
+│   │   ├── SpecialtySection.tsx
+│   │   └── TestimonialsSection.tsx
+│   │
+│   ├── App.css
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Características
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Diseño moderno y responsive.
+* Sección principal de presentación del servicio.
+* Información sobre las zonas de cobertura.
+* Explicación de cómo funciona el servicio.
+* Presentación de especialidades.
+* Testimonios de clientes.
+* Sección de llamada a la acción (CTA).
+* Botón flotante de contacto mediante WhatsApp.
+* Navegación entre las diferentes secciones de la landing page.
+* Política de privacidad.
+* Adaptación para dispositivos móviles, tablets y computadoras.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Instalación
+
+Clona el repositorio:
+
+```bash
+git clone <https://github.com/devlab921-prog/Flowsync.git>
 ```
+
+Ingresa al proyecto:
+
+```bash
+cd Midnight_Snacks
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Luego abre en el navegador la URL mostrada por Vite, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## 📦 Scripts disponibles
+
+```bash
+npm run dev
+```
+
+Inicia el servidor de desarrollo.
+
+```bash
+npm run build
+```
+
+Genera la versión optimizada para producción.
+
+```bash
+npm run preview
+```
+
+Permite visualizar localmente la versión de producción.
+
+```bash
+npm run lint
+```
+
+Ejecuta ESLint para verificar posibles problemas en el código.
+
+## 🖥️ Vista previa
+
+![Midnight_Snacks Preview](public/preview.png)
+
+## 📱 Responsive Design
+
+La landing page está diseñada para adaptarse a diferentes tamaños de pantalla:
+
+* 💻 Desktop
+* 📱 Mobile
+* 📟 Tablet
+
+## 🎯 Objetivo del proyecto
+
+El objetivo de **Midnight_Snacks** es proporcionar una presencia web moderna para el servicio de delivery, mostrando de manera clara su propuesta de valor y facilitando que los usuarios puedan conocer el servicio y ponerse en contacto rápidamente.
+
+## 👨‍💻 Autor
+
+**Gino Anderson Moreno Bejarano**
+
+Proyecto desarrollado como landing page utilizando React, TypeScript y Vite.
